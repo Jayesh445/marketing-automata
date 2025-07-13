@@ -18,8 +18,8 @@ const adminProtectedRoutes = [
 // Define public routes (no auth required)
 const publicRoutes = [
   '/',
-  '/login',
-  '/signup',
+  '/auth/login',
+  '/auth/signup',
   '/privacy',
   '/terms',
   '/admin/login',
@@ -73,12 +73,12 @@ export function middleware(request: NextRequest) {
   );
   
   if (isProtectedRoute && !userToken) {
-    const loginUrl = new URL('/login', request.url);
+    const loginUrl = new URL('/auth/login', request.url);
     loginUrl.searchParams.set('redirect', pathname);
     return NextResponse.redirect(loginUrl);
   }
   
-  if (userToken && (pathname === '/login' || pathname === '/signup')) {
+  if (userToken && (pathname === '/auth/login' || pathname === '/auth/signup')) {
     return NextResponse.redirect(new URL('/dashboard', request.url));
   }
   

@@ -32,7 +32,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <Link href="/signup">
+            <Link href="/auth/signup">
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary-hover text-white px-8 py-3"

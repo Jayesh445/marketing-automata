@@ -44,12 +44,12 @@ export function LandingNavbar() {
 
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6 space-x-4">
-              <Link href="/login">
+              <Link href="/auth/login">
                 <Button variant="ghost" size="sm">
                   Login
                 </Button>
               </Link>
-              <Link href="/signup">
+              <Link href="/auth/signup">
                 <Button size="sm" className="bg-primary hover:bg-primary-hover">
                   Get Started
                 </Button>
@@ -93,12 +93,12 @@ export function LandingNavbar() {
             </Link>
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-3 space-x-3">
-                <Link href="/login">
+                <Link href="/auth/login">
                   <Button variant="ghost" size="sm" className="w-full">
                     Login
                   </Button>
                 </Link>
-                <Link href="/signup">
+                <Link href="/auth/signup">
                   <Button
                     size="sm"
                     className="w-full bg-primary hover:bg-primary-hover"

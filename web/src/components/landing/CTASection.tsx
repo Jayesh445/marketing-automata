@@ -56,7 +56,7 @@ export function CTASection() {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Link href="/signup">
+            <Link href="/auth/signup">
               <Button
                 size="lg"
                 className="bg-white text-primary hover:bg-gray-100 px-8 py-3"
@@ -65,7 +65,7 @@ export function CTASection() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/login">
+            <Link href="/auth/login">
               <Button
                 variant="outline"
                 size="lg"

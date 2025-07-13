@@ -71,10 +71,10 @@ export default function PricingPage() {
               MarketingAI Pro
             </Link>
             <div className="flex items-center space-x-4">
-              <Link href="/login">
+              <Link href="/auth/login">
                 <Button variant="ghost">Login</Button>
               </Link>
-              <Link href="/signup">
+              <Link href="/auth/signup">
                 <Button className="bg-primary hover:bg-primary-hover">
                   Get Started
                 </Button>
@@ -136,7 +136,7 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/signup">
+                  <Link href="/auth/signup">
                     <Button
                       className={`w-full ${
                         plan.popular ? "bg-primary hover:bg-primary-hover" : ""
@@ -219,7 +219,7 @@ export default function PricingPage() {
             Join thousands of marketers who have already revolutionized their
             campaigns
           </p>
-          <Link href="/signup">
+          <Link href="/auth/signup">
             <Button
               size="lg"
               className="bg-white text-primary hover:bg-gray-100"
